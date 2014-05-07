@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Portfolio of Joel Santiago</title>
+    <meta name="description" content="The portfolio of San Francisco based software developer & web designer Joel Santiago.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Joel Santiago">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link href="img/icons/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="img/icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+    <link href="img/icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+    <link href="img/icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Fonts from Font Awsome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+     <!-- Magnific popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/plugins/html5shiv.js"></script>
+      <script src="js/plugins/respond.min.js"></script>
+      <script src="js/linecons.js></script>
+    <![endif]-->
+    <script type="text/javascript">
+        function validateForm() {
+            var nameID = document.MailingList.name;
+            var emailID = document.MailingList.email;
+            var messageID = document.MailingList.message;
+
+            if (nameID.value == null || nameID.value == "") {
+                alert("Oops, don't forget your name.");
+                nameID.focus();
+                return false;
+            }
+
+            if (emailID.value == null || emailID.value == "") {
+                alert("I need an email address if you want me to get back to you.");
+                emailID.focus();
+                return false;
+            }
+
+            var atpos = emailID.value.indexOf("@");
+            var dotpos = emailID.value.lastIndexOf(".");
+            if (atpos < 1 || dotpos < atpos+2 || dotpos+2 >= emailID.value.length) {
+                alert("Make sure you typed your email correctly.");
+                emailID.focus();
+                return false;
+            }
+
+            if (messageID.value == null || messageID.value == "") {
+                alert("What would you like to talk about? OK, now put it in the box.");
+                messageID.focus();
+                return false;
+            }
+
+            alert("Perfect! Thanks for your interest! I'll get back to you as soon as I can.");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <!-- Start: Navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" id="main-menu">
+                    <li><a href="#page-welcome">Home</a></li>
+                    <li><a href="#page-profile">Profile</a></li>
+                    <li><a href="#page-skills">Skills</a></li>
+                    <li><a href="#page-education">Education</a></li>
+                    <li><a href="#page-experience">Experience</a></li>
+                    <li><a href="#page-portfolio">Portfolio</a></li>
+                    <li><a href="#page-contact">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <!-- End: Navbar -->
+    <!-- Start: Welcome Section -->
+    <section id="page-welcome" class="page-welcome">
+        <div>
+            <ul class="slider-controls">
+                <li><a id="vegas-next" class="next" href="#"></a></li>
+                <li><a id="vegas-prev" class="prev" href="#"></a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row">
+                <header class="centered">
+                    <h1>Joel Santiago</h1>
+                    <p>Software Developer</p>
+                </header>
+                <div class="social-icons">
+                    <a href="http://www.linkedin.com/pub/joel-santiago/23/680/311/" class="btn btn-round btn-clear btn-linkedin" title="Connect with me on LinkedIn"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/joel.santiago.12139" class="btn btn-round btn-clear btn-facebook" title="Like me on facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/joelasantiago" class="btn btn-round btn-clear btn-twitter" title="Follow me on twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://plus.google.com/109066691950698012302" class="btn btn-round btn-clear btn-google" title="Add me on Google+"><i class="fa fa-google-plus"></i></a>
+                    <a href="https://github.com/joelsantiago" class="btn btn-round btn-clear btn-github" title="Check out my code on Github"><i class="fa fa-github-alt"></i></a>
+                </div>
+                <a href="#page-contact" class="btn btn-default contact">Contact Me</a>
+            </div>
+        </div>
+    </section>
+    <!-- End: Welcome Section -->
+    <!-- Start: Profile Section -->
+    <section id="page-profile" class="page-profile">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Personal Profile</h2>
+                <div class="spacer"></div>
+                <p class="section-subtitle">A brief bit about myself</p>
+            </header>
+            <div class="row">
+                <div class="col-md-4 col-lg-3">
+                    <div class="profile"><img src="img/profile.png" alt="profile" class="hires"/></div>
+                </div>
+                <div class="col-md-8 col-lg-9">
+                    <p>My name is Joel Santiago and I'm a Bay Area, CA based software developer and web designer with a love for all things code.  My specialties include C and Java programming along with a passion for responsive web design, aiming for a "<a href="http://www.lukew.com/resources/mobile_first.asp" class="bio-link">mobile first</a>" approach.  One of the many new projects I'm currently working on is expanding my knowledge and experience in the field of mobile app development, namely iOS and Android.</p>
+                    <p>I do most of my web design in <a href="https://panic.com/coda/" class="bio-link">Coda 2</a> from Panic, though I can't deny that Dreamweaver sneaks in every now and again.  Being mostly Mac based, <a href="https://developer.apple.com/xcode/" class="bio-link">Xcode</a> gets used quite often for any C/Obj-C development and while I'm plenty comfortable with Eclipse, most of my Java programming gets accomplished through <a href="http://www.jetbrains.com/idea/" class="bio-link">IntelliJ IDEA</a>, a wonderful IDE from JetBrains.  Despite those great IDE's, I often find myself gravitating towards the awesome, yet simplistic <a href="http://www.sublimetext.com" class="bio-link">Sublime Text Editor</a> for many projects.  I'm no stranger working within the confines of a command line; often preferring it's complexities to the standard GUI.  I push to <a href="https://github.com/joelsantiago" class="bio-link">Github</a> for version control.</p>
+                    <p>When I'm not coding, you might find me taking in a movie, playing a game on <a href="https://live.xbox.com/en-GB/Profile?gamertag=rotorhead94" class="bio-link">Xbox</a>, watching a baseball game, or attempting to clear out my Netflix queue.  On the days that I'm up for something a little more active, I might grab the <a href="http://www.trekbikes.com/us/en/" class="bio-link">mountain bike</a> and go for a ride, take the FJ Cruiser out for an excursion or attempt to improve my <a href="http://www.dji.com" class="bio-link">Phantom</a> flying skills.</p>
+                    <a href="#page-contact" class="btn btn-inverse btn-lg contact">Request a resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Profile Section -->
+    <!-- Start: Skills Section -->
+    <section id="page-skills" class="page-skills">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title"><span>Skills</span></h2>
+                <div class="spacer"></div>
+                <p class="section-subtitle">A quick summary of what I know and how well I know it</p>
+            </header>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <span class="chart" data-percent="80">
+                        <span class="percent"></span>
+                        <h3>C/C++</h3>
+                    </span>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <span class="chart" data-percent="60">
+                        <span class="percent"></span>
+                        <h3>Java</h3>
+                    </span>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <span class="chart" data-percent="75">
+                        <span class="percent"></span>
+                        <h3>Python</h3>
+                    </span>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <span class="chart" data-percent="50">
+                        <span class="percent"></span>
+                        <h3>Objective-C</h3>
+                    </span>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <span class="chart" data-percent="75">
+                        <span class="percent"></span>
+                        <h3>Linux</h3>
+                    </span>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <span class="chart" data-percent="90">
+                        <span class="percent"></span>
+                        <h3>HTML5/CSS3</h3>
+                    </span>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <span class="chart" data-percent="85">
+                        <span class="percent"></span>
+                        <h3>PHP/MySQL</h3>
+                    </span>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <span class="chart" data-percent="60">
+                        <span class="percent"></span>
+                        <h3>JS/Jquery</h3>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Skills Section -->
+    <!-- Start: Education Section -->
+    <section id="page-education" class="page-education">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title"><span>Education</span></h2>
+                <div class="spacer"></div>
+                <p class="section-subtitle">The places where I was able to learn</p>
+            </header>
+            <div class="row">
+                <div class="col-md-6">
+                    <article class="education">
+                        <header>
+                            <h3>California State University East Bay</h3>
+                            <p>Bachelors of Computer Science - <strong>Graduated: </strong>2013</p>
+                        </header>
+                        <p>During my time at CSUEB, I was able to learn a wide variety of programming languages and concepts.  I attended a variety of courses ranging from Data Structures, Algorithms Analysis, Object Oriented Programming, Software Engineering Management, Database Architecture, Computer Network Programming, Web Development (Client & Server side) among many others.  Each have contributed towards an expansive knowledge that makes me suitable to approach nearly any scenario.</p>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="education">
+                        <header>
+                            <h3>Las Positas Community College</h3>
+                            <p>Associates of Liberal Arts & Sciences  - <strong>Graduated: </strong>2010</p>
+                        </header>
+                        <p>Although my education at this institution consisted primarily of general ed. courses, this is where I was able to jumpstart my love for programming and web development.  While my computer programming education here consisted mostly of C++ and web development was only client side strictly utilizing HTML & CSS, the teachers and the courses gave me the push to start gathering as much information as possible.  Steering my career path into this field was the culmination of these events.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Education Section -->
+    <!-- Start: Experience Section -->
+    <section id="page-experience" class="page-experience">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title"><span>Experience</span></h2>
+                <div class="spacer"></div>
+                <p class="section-subtitle">My work history up to this point</p>
+            </header>
+            <div class="row">
+                <div class="col-lg-12">
+                    <article class="experience">
+                        <header>
+                            <h3>Best Buy</h3>
+                            <p>Customer Sales Assistant / Dublin, CA / 2004 - 2010</p>
+                        </header>
+                        <p>During my time at Best Buy, I worked as a customer sales assistant throughout every department of the store.  Spending most of my time in customer facing positions, I was able to gain the experience needed to provide top-tier customer service, attracting many repeat customers and building many relationships throughout the years.  Another aspect of customer service I was able to build upon was identifying a customers lifestyle specific needs based on simple interactions.  This allowed me the opportunity to get them set up with whatever solution that was perfect for their needs.  Aside from standard customer assistance, I also went the extra mile to provide detailed technical support to customers whenever I could, setting aside time to help them through whatever problems they had encountered.  I worked closely within several different teams throughout my employment and was able to contribute my efforts towards reaching and meeting monthly sales objectives.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Experience Section -->
+    <!-- Start: Portfolio Section -->
+    <section id="page-portfolio" class="page-portfolio">
+        <div class="container">
+            <div class="row">
+                <header class="section-header">
+                    <h2 class="section-title"><span>Portfolio</span></h2>
+                    <div class="spacer"></div>
+                    <p class="section-subtitle">Some cool projects I'm proud of and their <a href="https://github.com/joelsantiago" title="Check out my code on Github">code</a></p>
+                </header>
+                <div id="grid-controls-wrapper" class="controls-menu">
+                    <ul class="nav nav-pills center-pills grid-controls">
+                        <li class="active filter" data-filter="all"><a href="javascript:void(0)">All</a></li>
+                        <li class="filter" data-filter="c"><a href="javascript:void(0)">C/C++</a></li>
+                        <li class="filter" data-filter="java"><a href="javascript:void(0)">Java</a></li>
+                        <li class="filter" data-filter="python"><a href="javascript:void(0)">Python</a></li>
+                        <li class="filter" data-filter="objectivec"><a href="javascript:void(0)">iOS</a></li>
+                        <li class="filter" data-filter="web"><a href="javascript:void(0)">Web</a></li>
+                    </ul>
+                </div>
+                <!-- Start: Portfolio Items -->
+                <div id="grid" class="grid-wrapper">
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2-5 mix objectivec">
+                        <a href="img/portfolio/large/calculated.png" title="Calculated iOS App" data-effect="mfp-zoom-in">
+                            <div class="overlay">
+                                <p>Calculated iOS App</p>
+                            </div>
+                            <img src="img/portfolio/small/calculated.png" class="hires">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2-5 mix python">
+                        <a href="img/portfolio/large/addressbook.png" title="Address Book in Python" data-effect="mfp-zoom-in">
+                            <div class="overlay">
+                                <p>Address Book in Python</p>
+                            </div>
+                            <img src="img/portfolio/small/addressbook.png" alt="" class="hires">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2-5 mix web">
+                        <a href="img/portfolio/large/store.png" title="Responsive Store UI" data-effect="mfp-zoom-in">
+                            <div class="overlay">
+                                <p>Responsive Store UI</p>
+                            </div>
+                            <img src="img/portfolio/small/store.png" alt="" class="hires">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2-5 mix c">
+                        <a href="img/portfolio/large/filetransfer.png" title="TCP File Transfer in C" data-effect="mfp-zoom-in">
+                            <div class="overlay">
+                                <p>TCP File Transfer in C</p>
+                            </div>
+                            <img src="img/portfolio/small/filetransfer.png" alt="" class="hires">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2-5 mix objectivec">
+                        <a href="img/portfolio/large/tadoodle.png" title="Todo App in Cocoa" data-effect="mfp-zoom-in">
+                            <div class="overlay">
+                                <p>Todo App in Cocoa</p>
+                            </div>
+                            <img src="img/portfolio/small/tadoodle.png" alt="" class="hires">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2-5 mix java">
+                        <a href="img/portfolio/large/javachatclient.png" title="Multiuser Chat Client in Java" data-effect="mfp-zoom-in">
+                            <div class="overlay">
+                                <p>Multiuser Chat Client in Java</p>
+                            </div>
+                            <img src="img/portfolio/small/javachatclient.png" alt="" class="hires">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2-5 mix objectivec">
+                        <a href="img/portfolio/large/todoodle.png" title="Todo iOS App" class="Todo iOS App" data-effect="mfp-zoom-in">
+                            <div class="overlay">
+                                <p>Todo iOS App</p>
+                            </div>
+                            <img src="img/portfolio/small/todoodle.png" alt="" class="hires">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2-5 mix c">
+                        <a href="img/portfolio/large/player.png" title="Multithreaded Music Player in C" data-effect="mfp-zoom-in">
+                            <div class="overlay">
+                                <p>Multithreaded Music Player in C</p>
+                            </div>
+                            <img src="img/portfolio/small/player.png" alt="" class="hires">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2-5 mix java">
+                        <a href="img/portfolio/large/hospitalapp.png" title="Hospital Management App in Java" data-effect="mfp-zoom-in">
+                            <div class="overlay">
+                                <p>Hospital Management App in Java</p>
+                            </div>
+                            <img src="img/portfolio/small/hospitalapp.png" alt="" class="hires">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2-5 mix java">
+                        <a href="img/portfolio/large/messagingapp.png" title="Group Messaging UI in Java" data-effect="mfp-zoom-in">
+                            <div class="overlay">
+                                <p>Group Messaging UI in Java</p>
+                            </div>
+                            <img src="img/portfolio/small/messagingapp.png" alt="" class="hires">
+                        </a>
+                    </div>
+                </div>
+                <!-- End: Portfolio Items -->
+            </div>
+        </div>
+    </section>
+    <!-- End: Portfolio Section -->
+    <!-- Start: Contact Section -->
+    <section id="page-contact" class="page-contact">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title"><span>Contact</span></h2>
+                <div class="spacer"></div>
+                <p class="section-subtitle">Interested in working with me or simply have a question? Just fill out the form and send me a message</p>
+            </header>
+            <div class="row">
+                <div class="col-md-12 col-lg-push-1 col-lg-10">
+                    <!-- Start: Contact Form -->
+                    <form name="MailingList" class="form-horizontal" id="form-contact" action="php/mail.php" onsubmit="return validateForm();" method="post">
+                        <fieldset>
+                            <label class="control-label" for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control input-lg "/>
+                        </fieldset>
+                        <fieldset>
+                            <label class="control-label" for="email">Email</label>
+                            <input type="text" name="email" id="email" class="form-control input-lg"/>
+                        </fieldset>
+                        <fieldset>
+                            <label class="control-label" for="message">Message</label>
+                            <textarea name="message" id="message" rows="8" class="form-control input-lg"></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <input type="submit" class="btn btn-message btn-lg" id="submit-contact" value="Submit Message"/>
+                        </fieldset>
+                    </form>
+                    <!-- End: Contact Form -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Contact Section -->
+    <!-- Start: Footer Section -->
+    <section id="page-footer" class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p id="footer-title">
+                        Joel Santiago
+                        <br>
+                        Pleasanton, CA
+                    </p>
+                    <a href="#page-welcome" class="scroll-up">Back to top <span id="arrow">↑</span></a>
+                    <div id="footer-icons">
+                        <a href="http://www.linkedin.com/pub/joel-santiago/23/680/311/" title="Connect with me on LinkedIn">
+                            <li id="linkedin"><i class="fa fa-linkedin"></i></li></a>
+                        <a href="https://www.facebook.com/joel.santiago.12139" title="Like me on facebook">
+                            <li id="facebook"><i class="fa fa-facebook"></i></li></a>
+                        <a href="https://twitter.com/joelasantiago" title="Follow me on twitter">
+                            <li id="twitter"><i class="fa fa-twitter"></i></li></a>
+                        <a href="https://plus.google.com/109066691950698012302" title="Add me on Google+">
+                           <li id="google"><i class="fa fa-google-plus"></i></li></a>
+                        <a href="https://github.com/joelsantiago" title="Check out my code on Github">
+                            <li id="github"><i class="fa fa-github-alt"></i></li></a>
+                    </div>
+                    <p class="copyright">© 2013-2014 Joel Santiago.  All work shown is the property of it's respective owner.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Footer Section -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Feature detection -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="js/jquery.vegas.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-48785991-1', 'joelsantiago.co');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>
